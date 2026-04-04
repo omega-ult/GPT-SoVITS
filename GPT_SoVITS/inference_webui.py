@@ -28,6 +28,10 @@ import sys
 import traceback
 import warnings
 
+if os.name == "nt":
+    _ffmpeg_bin = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ffmpeg", "bin")
+    if os.path.isdir(_ffmpeg_bin):
+        os.add_dll_directory(_ffmpeg_bin)
 import torch
 import torchaudio
 from text.LangSegmenter import LangSegmenter
