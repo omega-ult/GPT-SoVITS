@@ -8,6 +8,7 @@ import traceback
 from copy import deepcopy
 
 import torchaudio
+import torchaudio_compat  # Monkey-patch for FFmpeg-free audio loading
 from tqdm import tqdm
 
 now_dir = os.getcwd()

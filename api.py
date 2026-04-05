@@ -154,6 +154,7 @@ from text.LangSegmenter import LangSegmenter
 from time import time as ttime
 import torch
 import torchaudio
+import torchaudio_compat  # Monkey-patch for FFmpeg-free audio loading
 import librosa
 import soundfile as sf
 from fastapi import FastAPI, Request, Query
