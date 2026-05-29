@@ -9,7 +9,7 @@ services:
       - "9872:9872"
       - "9873:9873"
       - "9874:9874"
-      - "9880:9880"
+      - "8765:9880"
     volumes:
       - .:/workspace/GPT-SoVITS
     environment:
@@ -27,7 +27,7 @@ services:
       - "9872:9872"
       - "9873:9873"
       - "9874:9874"
-      - "9880:9880"
+      - "8765:9880"
     volumes:
       - .:/workspace/GPT-SoVITS
       - tools/asr/models:/workspace/models/asr_models
@@ -47,7 +47,7 @@ services:
       - "9872:9872"
       - "9873:9873"
       - "9874:9874"
-      - "9880:9880"
+      - "8765:9880"
     volumes:
       - .:/workspace/GPT-SoVITS
     environment:
@@ -65,7 +65,7 @@ services:
       - "9872:9872"
       - "9873:9873"
       - "9874:9874"
-      - "9880:9880"
+      - "8765:9880"
     volumes:
       - .:/workspace/GPT-SoVITS
       - tools/asr/models:/workspace/models/asr_models
